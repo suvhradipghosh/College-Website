@@ -1,0 +1,5 @@
+<img src="logo.png" alt="logo" width="150" height="150" align="left">
+<img src="TIG_Logo.png" alt="TIG_Logo" width="150" height="150" align="right">
+<center><b><h1><font size="8">Faculty Management</font></h1></b></center>
+
+<center><img src="22.jpg" alt="22" width="500" height="200"></center>

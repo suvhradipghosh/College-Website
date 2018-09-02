@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>Tib</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="file:///D:/College%20Project/New%20folder/homepage.html" class="w3-bar-item w3-button"><b>Tib</b>Techno India Batanagar</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="bg" src="bg.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Tib</b></span> <span class="w3-hide-small w3-text-light-grey">Life at Tib</span></h1>
+  </div>
+</header>
+
+
+ <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Techno India Batanagar is an Institute under the vision of Techno India Group, One of the largest knowledge management groups in the eastern part of the country having 4 Universities, 20 Engineering Colleges & 10 B-Schools, 15 Schools, Hospital, Press and many more.
+
+Established in the year 2012, the Institute has already made its presence felt by its vibrant campus in the Maheshtala – Taratala region of The City of joy- The Industrial Hub of the City.
+
+The Institute is approved by All India Council of Technical Education (AICTE) and affiliated to Maulana Abdul Kalam Azad University of Technology, West Bengal (MAKAUT), formerly known as WBUT. The institute runs B.Tech curriculum in five branches of engineering with an intake of 60 in each branch, viz.
+    1.	Computer Science & Engineering 
+2.	Electrical Engineering 
+3.	Electronics & Communication Engineering
+4.	Mechanical Engineering 
+5.	Civil Engineering
+
+The Institute also runs Diploma courses in Civil & Mechanical Engineering, which is approved by AICTE & affiliated to West Bengal State Council of Technical & Vocational Education and Skill Development with an intake of 60 students in each branch.
+
+The institute was developed with a vision to build it as a Centre of Excellence for technical education. The Institute has been giving maximum stress on modern teaching methodologies, Faculty development, promotion of research activities so that the students graduating from the institute are industry-ready professionals with leadership values and high degree of professional skills.
+
+Moreover TIB as a family had taken the initiative to bridge the gap between academic and non-academic ambit by introducing a number of co-curricular and extra –curricular activities in the college in the form of number of committees linked with the academic sphere.</p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="lab.jpg" alt="lab" style="width:100%">
+      <h3>Lab</h3>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="225.jpg" alt="225" style="width:100%">
+      <h3>Students</h3>
+      </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="22.jpg" alt="22" style="width:100%" "height:70%">
+      <h3>Math Section</h3>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="group.jpg" alt="group" style="width:100%">
+      <h3>Canteen</h3>
+      <p class="w3-opacity">Architect</p>
+   
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your and our next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Google Map -->
+<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://suvhrophotography.wordpress.com" title="W3.CSS" target="_blank" class="w3-hover-text-green">Suvhradip Ghosh</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://www.google.co.in/maps/place/Techno+India+-+Batanagar/@22.4921767,88.2204822,17z/data=!4m5!3m4!1s0x3a02765321b3ac7b:0xcb343879680ba525!8m2!3d22.4921767!4d88.2226816"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
